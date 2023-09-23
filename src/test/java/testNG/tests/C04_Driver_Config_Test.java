@@ -13,7 +13,7 @@ public class C04_Driver_Config_Test {
         //Driver.getDriver().get("https://www.amazon.com");
         Driver.getDriver().get(ConfigReader.getProperty("amazon_Url"));
 
-        //verify that title contains "Afmazon"
+        //verify that title contains "Amazon"
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Amazon"));
 
         //close driver
